@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:700,regular,300,italic%7CRaleway:regular,700"
+      media="all"
+    />
+    <link rel="stylesheet" href="apply.css" />
+    <title>Agent Registration Application</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav">
+        <a href="index.html">
+          <img
+            src="https://d9hhrg4mnvzow.cloudfront.net/promo.betking.com/become-an-agent/d5b305f6-brand-logo.svg"
+            alt="hh"
+          />
+        </a>
+        <ul>
+          <li><a href="https://www.betking.com/sports/">sports</a></li>
+          <li><a href="https://www.betking.com/live/">live</a></li>
+          <li><a href="https://www.betking.com/virtuals/">virtual</a></li>
+          <li><a href="index.html">become an agent</a></li>
+          <li><a href="https://www.betking.com/news/">blog</a></li>
+          <li><a href="https://www.betking.com/help/">help</a></li>
+          <li><a href="javascript:void(0);">live chat</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="blue"></div>
+
+    <div class="form-wrapper">
+      <h3>New Agent Application</h3>
+      <hr />
+      <form name="Agent Registration" method="post" data-netlify="true">
+        <div>
+          <div class="first-part">
+            <div class="form-group">
+              <label for="fname">First Name: (<span>*</span>) </label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Enter your first name..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="lname">Last Name: (<span>*</span>) </label>
+              <input
+                type="text"
+                id="lname"
+                placeholder="Enter your last name..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="birthdate">Date of Birth: (<span>*</span>) </label>
+              <input
+                type="date"
+                id="birthdate"
+                placeholder="Enter your date of birth..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="gender">Gender:</label><br />
+              <select
+                name="gender"
+                value=""
+                class="form-control"
+                onchange="setDependent(this, false)"
+                id="CASECF6"
+              >
+                <option value="">- Please choose -</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mobilephone">
+                <i
+                  class="fa fa-info-circle"
+                  aria-hidden="true"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Phone format must start with +234"
+                ></i>
+                Mobile Phone: (<span>*</span>)
+              </label>
+              <input
+                type="text"
+                class="form-control phone"
+                id="mobilephone"
+                name="mobilephone"
+                placeholder="Enter your phone number"
+                value="+234"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:(<span>*</span>)</label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="shopaddress">
+                <i
+                  class="fa fa-info-circle"
+                  aria-hidden="true"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Please provide us Building No, Street 1, Street 2, City"
+                ></i>
+                Prospect Shop Address:(<span>*</span>)</label
+              >
+              <textarea
+                class="form-control shop-textarea"
+                name="shopaddress"
+                id="shopaddress"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
+          <!-- left box -->
+          <!-- right box -->
+          <div class="second-part">
+            <div class="form-group">
+              <label for="landmark">
+                <i
+                  class="fa fa-info-circle"
+                  aria-hidden="true"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Please give us the closest Landmark to your Shop"
+                ></i>
+                Landmark:
+              </label>
+              <textarea
+                class="form-control landmark-textarea"
+                name="landmark"
+                id="landmark"
+                rows="5"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="shopState">Shop State: (<span>*</span>) </label>
+              <input
+                type="text"
+                id="shopState"
+                name="shopState"
+                placeholder="State..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="lga">LGA: (<span>*</span>) </label>
+              <input
+                type="text"
+                id="lga"
+                name="lga"
+                placeholder="LGA..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="referralchannel">Referral Channel:</label><br />
+              <select
+                name="referralchannel"
+                value=""
+                class="form-control"
+                id="CASECF5"
+              >
+                <option value="">- Please choose -</option>
+                <option value="Radio">Radio</option>
+                <option value="TV">TV</option>
+                <option value="Newspapers / Magazines">
+                  Newspapers / Magazines
+                </option>
+                <option value="Billboard">Billboard</option>
+                <option value="Bus / Tricycle branding">
+                  Bus / Tricycle branding
+                </option>
+                <option value="Facebook">Facebook</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Instagram">Instagram</option>
+                <option value="YouTube">YouTube</option>
+                <option value="Email">Email</option>
+                <option value="Employee">Employee</option>
+                <option value="Agent">Agent</option>
+                <option value="Other Online Adds">Other Online Adds</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="referrercode"
+                ><i
+                  class="fa fa-info-circle"
+                  aria-hidden="true"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Referral Shop ID should be Numeric, example: 123456"
+                ></i>
+                Referral Shop ID:</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="referrercode"
+                name="referrercode"
+                placeholder="Enter referrer Shop ID"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- right box -->
+
+        <div class="uploadbox">
+          <div>
+            <p>Shop photos</p>
+            <p>Each of your file(s) can be up to 12MB in size.</p>
+          </div>
+
+          <div>
+            <p>OutDoor photos</p>
+            <div class="input-container">
+              <input
+                type="file"
+                id="real-input1"
+                name="attach1"
+                accept="image/*, application/pdf"
+              />
+              <div class="browse-btn1">Attach file</div>
+              <span class="file-info1"></span>
+            </div>
+          </div>
+          <div>
+            <p>OutDoor photos</p>
+            <div class="input-container">
+              <input
+                type="file"
+                id="real-input2"
+                name="attach2"
+                accept="image/*, application/pdf"
+              />
+              <div class="browse-btn2">Attach file</div>
+              <span class="file-info2"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 btn-box">
+          <div class="col-sm-6 text-left">
+            <input type="reset" value="Reset" class="reset-btn" />
+          </div>
+          <div class="col-sm-6 text-right">
+            <input
+              type="submit"
+              id="submit"
+              name="submit"
+              value="Submit"
+              class="submit-btn"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

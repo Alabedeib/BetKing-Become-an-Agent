@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #031141;
+    width: 100%;
+    min-height: 12vh;
+}
+
+.nav {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav h3 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.container {
+    background-image: linear-gradient(to right, #031141, #15d4dc);
+    display: flex;
+    width: 100%;
+    height: 240px;
+}
+
+#best {
+    max-width: 430px;
+    margin: 20px auto 0 65px;
+}
+
+#best h2:first-of-type {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#best h2:first-of-type {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#best h2:last-of-type {
+    color: #1affff;
+    text-transform: uppercase;
+}
+
+#best h6 {
+    color: #fff;
+    font-size: .9em;
+    margin-top: 5px;
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a button {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #1affff;
+    width: 120px;
+    height: 36px;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #000f2d;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+a button:hover {
+    background-color: #fff;
+}
+
+#best img {
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.container div:nth-of-type(2) > img {
+    width: 170px;
+    margin: 68px 60px 0 -290px;
+}
+
+#texts {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#texts div {
+    padding: 15px;
+}
+
+#texts div h3 {
+    font-size: .8rem;
+    font-weight: 700;
+    color: #1a2f6d;
+}
+
+#texts div p {
+    font-size: .8rem;
+    color: #642f93;
+    font-weight: 300;
+}
+
+.container1 {
+    background-color: #d9dfee;
+    width: 100%;
+}
+
+.container1 > div {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.container1 > div > h3 {
+    padding-top: 30px;
+    color: #1a2f6d;
+}
+
+.offer {
+    display: flex;
+    padding-top: 15px;
+}
+
+.offer > img {
+    width: 40px;
+}
+
+.offer > p {
+    margin: 10px;
+    font-size: 14px;
+    color: #031141;
+}
+
+.offer > p > span {
+    font-weight: 700;
+}
+
+.container1 div hr {
+    width: 140px;
+    margin: 20px auto;
+    border: 2px solid white;
+}
+
+.container1 > div > p {
+    color: #031141;
+    font-size: 15px;
+    margin-bottom: 27px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    color: #031141;
+    font-size: 13.5px;
+    margin-top: 5px;
+}
+
+.ready {
+    background-color: #031141;
+    height: 130px;
+}
+
+.ready h3 {
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+.ready a button {
+    margin-left: 180px;
+}
+
+.container2 {
+    background-color: #d9dfee;
+    padding-top: 20px;
+    height: 410px;
+}
+
+.container2 hr, .container4 hr {
+    width: 40px;
+    border: 2px solid #fff;
+    margin: 0 auto;
+}
+
+#need {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+#need h3, #bonuses h3, .container4 h3 {
+    text-align: center;
+    padding: 15px;
+    color: #1a2f6d;
+    font-size: 17px;
+}
+
+#need p {
+    font-size: 13px;
+    color: #1a2f6d;
+    margin-bottom: 25px;
+}
+
+#need li {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+#need ul {
+    margin-bottom: 20px;
+}
+
+.container3 {
+    padding-top: 20px;
+}
+
+.container3 hr {
+    width: 40px;
+    border: 2px solid #d9dfee;
+    margin: 0 auto;
+}
+
+#bonuses {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.bonuses {
+    border: 4px solid #d9dfee;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.bonuses img {
+    float: left;
+    margin-right: 20px;
+}
+
+.bonuses h2 {
+    font-size: 15px;
+    color: #1a2f6d;
+}
+
+.bonuses p {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #1a2f6d;
+}
+
+.container4 {
+    background-color: #d9dfee;
+    padding-top: 20px;
+    height: 310px;
+}
+
+.testimonies {
+    display: flex;
+    max-width: 345px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/* .testimonies div:last-of-type {
+    margin-top: 10px;
+} */
